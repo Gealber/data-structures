@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"ton/practice/datastructures/radix"
+	"github.com/Gealber/data-structures/radix"
 )
 
 type testCase struct {

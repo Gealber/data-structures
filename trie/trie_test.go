@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"ton/practice/datastructures/trie"
+	"github.com/Gealber/data-structures/trie"
 )
 
 type testCase struct {
@@ -65,7 +65,7 @@ func genTcs() []testCase {
 			binStrLookup = binStrInsert[1:]
 		}
 
-        tcName := fmt.Sprintf("random %t tc for insert key: %s lookup key: %s", binStrInsert == binStrLookup, binStrInsert, binStrLookup)
+		tcName := fmt.Sprintf("random %t tc for insert key: %s lookup key: %s", binStrInsert == binStrLookup, binStrInsert, binStrLookup)
 
 		tcs = append(tcs, testCase{
 			name:      tcName,
