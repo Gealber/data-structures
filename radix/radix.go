@@ -93,7 +93,6 @@ func (n *Node) Insert(key string) {
 	}
 }
 
-// Print method is WRONG
 func (n *Node) Print(currentWord string) {
 	if n == nil {
 		return
