@@ -18,7 +18,7 @@ func Test_Search(t *testing.T) {
 	tr := exampleTree()
 	for _, tc := range basicTreeTcs() {
 		t.Run(tc.name, func(t *testing.T) {
-			if tr.STearch(chrToBinStr(tc.key)) != tc.expectedResult {
+			if tr.Search(chrToBinStr(tc.key)) != tc.expectedResult {
 				t.Fatal(fmt.Sprintf("unexpected result for key %d, expected: %t", tc.key, tc.expectedResult))
 			}
 		})
@@ -26,7 +26,7 @@ func Test_Search(t *testing.T) {
 }
 
 func chrToBinStr(chr int64) string {
-	return strconv.FormatInt(chr-64, 2)
+	return strconv.FormatInt(chr, 2)[2:]
 }
 
 func exampleTree() *patricia.Node {

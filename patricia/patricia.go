@@ -45,7 +45,7 @@ func (n *Node) search(key string, w int) string {
 	return n.rlink.search(key, n.skip)
 }
 
-func (n *Node) STearch(key string) bool {
+func (n *Node) Search(key string) bool {
 	t := n.search(key, -1)
 
 	return t == key
